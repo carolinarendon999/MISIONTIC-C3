@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
  
 namespace ProyectoCiclo3.App.Frontend.Pages
 {
-    public class ListServiceModel : PageModel
+    public class ListEncomiendaModel : PageModel
     {
         public void OnGet()
         {

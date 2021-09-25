@@ -1,16 +1,37 @@
 @page
 @{
 }
- 
-<div class="text-center">
-<form action="">
-  <label for="nombre" class="form-label">Nombre:</label>
-  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
-  <label for="edad" class="form-label">Edad:</label>
-  <input type="number" class="form-control" id="edad" name="edad" placeholder="Edad">
-  <label for="email" class="form-label">Email:</label>
-  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-  <hr>
-  <button type="submit" class="btn btn-success">Enviar</button>
-</form>
-</div>
+
+<body>
+
+<style>
+  body{
+    background: rgb(219,93,227);
+    background: linear-gradient(90deg, rgba(219,93,227,1) 0%, rgba(243,50,50,1) 50%, rgba(225,87,171,1) 69%);
+  }
+</style>
+  <div class="text-center">
+    <form action="">
+
+      <label for="id" class="form-label">Id:</label>
+      <input type="number" class="form-control" id="id" name="id" placeholder="Id">
+
+      <label for="origen" class="form-label">Origen:</label>
+      <input type="number" class="form-control" id="origen" name="origen" placeholder="Origen">
+
+      <label for="destino" class="form-label">Destino:</label>
+      <input type="number" class="form-control" id="destino" name="destino" placeholder="Destino">
+
+      <label for="fecha" class="form-label">Fecha:</label>
+      <input type="datetime" class="form-control" id="fecha" name="fecha" placeholder="Fecha">
+
+      <label for="hora" class="form-label">Hora:</label>
+      <input type="text" class="form-control" id="hora" name="hora" placeholder="Hora">
+
+      <label for="encomienda" class="form-label">Encomienda:</label>
+      <input type="number" class="form-control" id="encomienda" name="encomienda" placeholder="Encomienda">
+      <hr>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+  </div>
+</body>

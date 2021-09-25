@@ -23,6 +23,7 @@ namespace ProyectoCiclo3.App.Frontend.Pages
             _logger = logger;
         }
 
+        // cambio de prueba
         public void OnGet()
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
