@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AIX3Q1ZGZnXM5G4j4pOe8/btfXVUi1voPj4ejj6Qbhq4sgdJCvuRpvMASkpvBQThPZUw1AGJW8NH28qeTjBcGQ==",
+  "success": true,
+  "projectFilePath": "C:\\CAROLINA\\Proyecto Ciclo 3- MISIONTIC\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\William Oviedo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\William Oviedo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
