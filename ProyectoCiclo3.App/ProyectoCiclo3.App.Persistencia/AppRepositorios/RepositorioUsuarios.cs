@@ -30,5 +30,19 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
 
             // metodo add usuario
         }
+
+        public Usuario Update(Usuario newUsuario){
+
+            var user = usuario.SingleOrDefault(b => b.id == newUsuario.id);
+
+            if(user != null){
+                user.nombre = newUsuario.nombre;
+                user.apellidos = newUsuario.apellidos;
+                user.direccion = newUsuario.direccion;
+                user.telefono = newUsuario.telefono;
+                user.ciudad = newUsuario.ciudad;
+            }
+        return user;
+        }
     }
 }
