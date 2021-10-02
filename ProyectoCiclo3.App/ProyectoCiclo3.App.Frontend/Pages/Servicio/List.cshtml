@@ -1,4 +1,5 @@
 @page
+@model ProyectoCiclo3.App.Frontend.Pages.ListServicioModel
 @{
 }
  <body>
@@ -8,10 +9,13 @@
        background: linear-gradient(90deg, rgba(255,213,0,1) 0%, rgba(243,189,50,1) 50%, rgba(87,225,137,1) 69%);
      }
    </style>
-<table class="table table-hover">
-  <thead>
+
+<h1>Listado de Servicios</h1>
+<table class="table">
+
+<thead>
     <tr>
-      <th scope="col">Id</th>
+      <th scope="col">id</th>
       <th scope="col">Origen</th>
       <th scope="col">Destino</th>
       <th scope="col">Fecha</th>
@@ -19,31 +23,22 @@
       <th scope="col">Encomienda</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Colombia</td>
-      <td>Estado Unidos</td>
-      <td>18/09/2021</td>
-      <td>21:55</td>
-      <td>Juguete</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Canada</td>
-      <td>Colombia</td>
-      <td>19/09/2021</td>
-      <td>09:00</td>
-      <td>Medicina</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Colombia</td>
-      <td>Rusia</td>
-      <td>20/12/2021</td>
-      <td>8:00</td>
-      <td>Tegnologia</td>
-    </tr>
-  </tbody>
+
+    @foreach (var servicio in Model.Servicio)
+    {
+        <tr>
+            <td>@servicio.id</td>
+            <td>@servicio.origen</td>
+            <td>@servicio.destino</td>
+            <td>@servicio.fecha</td>
+            <td>@servicio.hora</td>
+            <td>@servicio.encomienda</td>
+            <td>
+              <a class="btn btn-info" asp-page="./Details" asp-route-servicioId="@servicio.id"><i class="fas fa-adjust"></i>Ver</a>
+              <a class="btn btn-info" asp-page="./Edit" asp-route-servicioId="@servicio.id">Editar</a>
+              <a class="btn btn-danger" href="">Eliminar</a>
+              </td>
+        </tr>
+    }
 </table>
  </body>
